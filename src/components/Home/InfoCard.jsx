@@ -3,18 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const InfoCard = ({ iconName, title, description }) => {
   return (
-    <div className="bg-gray-900 rounded-lg shadow-md p-6">
+    <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
       <div className="text-center">
         <FontAwesomeIcon
           icon={iconName}
-          className="text-8xl text-primary-color my-6"
+          className="text-6xl text-teal-700 my-6"
         />
       </div>
       <div className="mt-4">
-        <h2 className="text-2xl text-center font-bold text-secondary-color my-5 font-kalam">
+        <h2 className="text-3xl text-center font-bold text-teal-900 my-5 font-quicksand">
           {title}
         </h2>
-        <p className="mt-2 my-6 text-white font-medium text-center">
+        <p className="mt-2 my-6 text-gray-700 font-medium text-center">
           {description}
         </p>
       </div>
